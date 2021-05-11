@@ -1,0 +1,544 @@
+/* variables de color para tema primario 'light' */
+:root {
+   --letras-menu-panel: #222;
+   --panel: rgba(34, 34, 34, 0.85);
+   --hoja:  rgba(255, 255, 255,.9);
+   --text-p: #222;
+   --panelNav: rgb(220,220,220)
+   --main-card: radial-gradient(circle, #fff, #bff);
+   --panel-visitas-nav:radial-gradient(circle, #fff, #bbb);
+   --border-card:  #bbb;
+   --hoja-juego:radial-gradient(circle, #fff, #bbb);
+   --juegoA:radial-gradient(circle, #18171c, rgb(33, 121, 77));
+ 
+ }
+ /* rgb(241, 241, 250);;
+   --main-card: rgb(241, 241, 243); */
+ /* variables de color para tema secundario 'dark' */
+ body.dark-theme {
+ 
+   --letras-menu-panel: #fffb;
+   --panel: #ff5f5f;
+   --hoja: #18171c;
+   --text-p: rgba(252, 245, 245, 0.979);
+   --panelNav: #1d1d1d;
+   --main-card: #1d1d1d;
+   --panel-visitas-nav:radial-gradient(circle, #fff, #bbb);
+   --border-card:  #fff;
+   --hoja-juego:radial-gradient(circle, #fff, #bbb);
+  
+ }
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+.container{
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+
+}
+#particles-js {
+   height: 65%;
+   width: 100%;
+   position: absolute;
+   z-index: 10;
+ }
+
+
+ /*****************/
+/*    header              **/
+/*****************/
+.cabecera__img{
+   background-image: url('../images/fondo.jpg');
+   background-attachment: fixed;
+   background-size: cover;
+   height: 70vh;
+   width: 100%;
+
+}
+
+.nav{
+display: flex;
+z-index: 30;
+position: fixed;
+width: 100%;
+height: 3rem;
+align-items: center;
+font-size: 1.3em;
+text-transform: uppercase;
+background-color: rgba(38, 39, 37,.5);
+}
+#nav__div{
+   width: 100%;
+}
+#div__ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 100%;
+   align-items: center;
+}
+#div__ul li {
+
+   list-style: none;
+}
+
+#div__ul li a{
+/*    border: 1px solid red; */
+   color: yellow;
+   text-decoration: none;
+   font-weight: bold;
+   transition: all 0.3s ease, opacity 0.5s ease;
+
+}
+
+#div__ul > li > a:hover{
+   background-color: black;
+   color: blanchedalmond;
+   font-size: 1.4em;
+
+}
+
+
+/*---------------------------------------------------*/
+/*    contenido encabezado              **/
+/*-------------------------------------------------*/
+.cabecera__contenedor{
+   position: absolute;
+   height: 60%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   color: cornsilk;
+   justify-content: center;
+   align-items: center;
+ }
+ .encabezado{
+    font-size:10rem;
+    margin-bottom: 0;
+ }
+ #logo{
+    width: 6rem;
+   }
+   #logo >img{
+      width: 100%;
+      transition: all 0.3s ease, opacity 0.5s ease;
+   }
+   #logo:hover>img{
+      width: 140%;
+}
+.subtitulo{
+   /* background-color: rgba(38, 39, 37,.5); */
+   background-color: rgba(10, 10, 10,0.2);
+   font-size: 4em;
+}
+ .lenguajes {
+   width: 1em;
+   border: 0;
+   padding: 0;
+   object-fit: fill;
+   object-position: center;
+   align-self: center;
+   background-color: rgba(255, 255, 255,0.9);
+   
+ }
+ .tituloPP{
+    font-size: 2.5em;
+    background-color: rgba(10, 10, 10,0.5);
+ }
+
+/*****************/
+/*    main              **/
+/*****************/
+main{
+   display: flex !important;
+   flex-direction: row;
+
+   height: auto;
+   flex-wrap: wrap;
+   width: 100%;
+   
+}
+/*****************/
+/*    sobre mi              **/
+/*****************/
+.encabezados{
+   width: 100%;
+   text-align: center;
+}
+.mi_foto{
+   width: 30%;
+ 
+
+}
+.mi_foto img{
+   width: 100%;
+   object-fit: cover;
+}
+.sobre_mi{
+   
+width: 60%;
+}
+.sobreMi__parrafo{
+   font-size: 1.5em;
+   font-style: italic;
+   display: inline-block;
+   text-align: justify;
+   line-height: 1.5;
+   line-height: 1.5;
+   font-weight: bold;
+}
+
+/*****************/
+/*    cards              **/
+/*****************/
+#proyectos{
+   width: 100%;
+   text-align: center;
+}
+
+.cards{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+.card{
+   height: auto;
+  /*  background-color: var(--main-card); */
+  background-color: #ff5f5f;
+   margin: 1rem;
+   height: 27em;
+   border-radius: 2%;
+   margin: 10px;
+   text-align: center;
+overflow: hidden; /* el borde de las img */
+}
+.card_img{
+   width: 100%;
+   height: 15rem;
+   object-fit: cover;
+   object-position: 50% 50%;
+   filter: brightness(.8);/*opacidad*/
+
+}
+.card h2{
+   margin-top: 5px;
+   margin-bottom: 6px;
+   letter-spacing: 3px;
+   height: 2em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--text-p);
+}
+
+p{
+   display: flex;
+   justify-content: center;
+   text-align: justify;
+   padding: 5px;
+   margin: 0.5em 1em;
+   color:var( --text-p);
+}
+
+.card-body{
+   height: auto;
+}
+.footer{
+   height: 5rem;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.footer a{
+   height: 4.5rem;
+}
+.ico {
+   width: 3em;
+   height: 3em;
+   padding: 1px;
+   margin: 1px;
+   display: flex;
+   transition-duration: 2s;
+ }
+
+ .footer:hover {
+   color: rgb(90, 211, 241);
+ }
+ .ico:hover {
+   background: rgb(210, 230, 235);
+   border-radius: 60%;
+   width: 2.5em;
+   transform: rotate(0.5turn);
+ }
+
+/* _____________________________ */
+/*  juego*/
+/* ------------------------------ */
+.juego {
+   width: 100%;
+   height: auto;
+   border: 1px solid black;
+   background: var(--hoja-juego);
+   text-align: center;
+    flex-basis: auto;
+   flex-grow: 1;
+   
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+
+ /*   display: grid;
+   grid-template-columns: repeat(3, auto); */
+ }
+ 
+ #encabezadoJuegos{
+    width: 100%;
+    font-weight: bold;
+    font-size: 2.5rem;
+ }
+ 
+  .juegoA{
+    height: 38rem;
+     /*  max-width: 420px; */
+ width: 40vw;
+  
+   margin: 0 1rem;
+   /* background:var(--juegoA); */
+   background-image: url(../images/cielo.jpg);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   border: 5px solid black;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+   color: #fff;
+  margin-bottom: 0;
+  }
+ 
+ #ppt {
+   text-align: center;
+   padding: .1rem;
+   font-weight: bold;
+   font-size: 2rem;
+ }
+
+ .marcacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ .tituloCuadro{
+    line-height: 0;
+    padding: 0;
+ }
+ .titulocasilla{
+    padding: 0
+ }
+ .win,.lost,.tie{
+    background: #fff;
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 3px solid #18171c;
+ margin-bottom: 1rem;
+ font-size: 2em;
+ font-weight: bold;
+ color: #000;
+ }
+ 
+ 
+ #result {
+ display: flex;
+ justify-content: space-evenly;
+ line-height: .5rem;
+ }
+ .resulDiv__img{
+ width: 6rem;
+ /* border: 2px solid red; */
+ }
+ .vs{
+   font-weight: bold;
+   font-size: 2em;
+ }
+ .imgPpt{
+    width: 100%;
+    background: #fffb;
+      border-radius: 50%;
+ }
+ 
+ /* #result > img {
+   width: 100%;
+   background: #fffb;
+   border-radius: 50%;
+   object-fit: cover;
+  
+ } */
+ 
+ #start-text {
+   font-size: 1.5em;
+   padding: 1em;
+   font-weight: bold;
+ }
+ 
+ #group-btn {
+    /* margin-top:1.5rem; */
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 15vh;
+ /*   border: 1px solid red; */
+   padding: 0;
+  
+   
+ }
+ 
+ .btnMark {
+   background-color: rgb(72, 223, 110);
+   border: 4px solid black;
+   margin: 5px;
+   border-radius: 30%;
+   cursor: pointer;
+   width: 30%;
+   height: 4.5rem;
+ 
+   /* align-items: flex-start; */
+ }
+ 
+ .btnImg {
+   width: 5rem;
+  text-align: center;
+  object-fit: cover;
+  object-position: 50% 50%;
+ padding: 10px;
+ box-sizing: border-box;
+ 
+ }
+ 
+ #juegoB{
+    width: 45vw;
+    background: rgba(255, 0, 64, 0.3);
+    margin: 0;
+    margin: 0 1rem;
+ }
+/***********************/
+/*  separador parallax **/
+/**********************/
+
+.img_m{
+   background-image: url('../images/fondo.jpg');
+   background-attachment: fixed;
+   background-size: cover;
+   height: 30vh;
+   width: 100%;
+
+}
+
+/* _____________________________ */
+/*  articulos*/
+/* ------------------------------ */
+.articulos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+/*   overflow-y: hidden;  */
+}
+#aritculosH2{
+  width: 100%;
+     font-weight: bold;
+   font-size: 2.5rem;
+   text-align: center;
+       padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.articulos__titulos {
+  font-size: 2em;
+  text-align: center;
+}
+article {
+  width: 45%;
+  text-align: justify;
+  margin: 0 10px;
+  padding: 0 5px;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+#lista {
+  list-style: none;
+  line-height: 1.5em;
+}
+#lista li {
+   padding-bottom: 1.5em;
+}
+.articulo {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/*****************/
+/*    footer              **/
+/*****************/
+
+.img_f{
+   background-image: url('../images/fondo.jpg');
+   background-attachment: fixed;
+   background-size: cover;
+   height: 50vh;
+   width: 100%;
+}
+
+
+
+/* _____________________________ */
+/* Botones para cambiar tema */
+/* ------------------------------ */
+
+.change-theme-button {
+   position: fixed;
+   z-index: 900;
+   left: 1vw;
+   /* right: calc(4.25rem + 1vw); */
+   /*   transition: all 1 ease; */
+ 
+ }
+ .change-theme-button::before {
+   background-image: url(../images/moon.ico);
+   background-position: center;
+   background-size: cover;
+   /*  content: "🌞"; */
+   content: "";
+   width: 4rem;
+   height: 4rem;
+   position: fixed;
+    bottom: 17vh;
+      cursor: pointer;
+ }
+ 
+ .dark-theme .change-theme-button::before {
+   background-image: url(../images/sun.ico);
+   background-position: center;
+   background-size: cover;
+   /* content:   "🌝" ; */
+   content: "";
+ }
+ 
+ /* _____________________________ */
+ /* Botones para cambiar tema */
+ /* ------------------------------ */
+ .panel-btn {
+    visibility: visible;
+ }
+ 
+ 
+ 

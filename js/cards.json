@@ -1,0 +1,35 @@
+[
+   {
+      "id": 1,
+      "thumbnailUrl" : "./images/joyeria.jpg",
+      "title": "Página de Joyeria PARALLAX",
+      "description" : "Es una página de una joyeria ficticia, con un efecto de profundidad creado en CSS",
+      "link1": "https://pagparallax.netlify.app/",
+      "link2": "https://github.com/Alejandro-va/parallax/"
+   },
+   {
+      "id": 2,
+      "thumbnailUrl" : "./images/carritoCompras.jpg",
+      "title": "Carrito de compras Vanilla js",
+      "description" : "Un carrito de compras que muestra los productos mediante cards, creado en Vanilla js",
+
+      "link1": "https://carritodecomprasvanillajs.netlify.app/",
+      "link2": "https://github.com/Alejandro-va/carrito-de-compras-vailla-js"
+   },
+   {
+      "id": 3,
+      "thumbnailUrl" : "./images/portafolio.jpg",
+      "title": "Portafolio React",
+      "description" : "Elaborado en React y Css, con un Slider para mostrar el menu de los trabajos",
+      "link1": "https://portafoliojahz.netlify.app/",
+      "link2": "https://github.com/Alejandro-va/portafolio"
+   },
+   {
+      "id": 4,
+      "thumbnailUrl" : "https://picsum.photos/id/0/600",
+      "title": "Sistema Administrativo",
+      "description" : "Sistema administrativo de MEDIC EMERGENCIAS MEDICAS, elaborado en react y Material U-I (PRIVADO)",
+      "link1": "#",
+      "link2": "#"
+   }
+]
