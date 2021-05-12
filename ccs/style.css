@@ -28,12 +28,12 @@
    --hoja-juego:radial-gradient(circle, #fff, #bbb);
   
  }
+
 *{
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-font-family: 'Roboto', sans-serif;
-
+  font-family: 'Roboto', sans-serif;
 }
 /* subtitulos h2 */
 .caption{
@@ -42,12 +42,13 @@ font-family: 'Roboto', sans-serif;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
+
 .container{
    height: 100%;
    display: flex;
    flex-direction: column;
-
 }
+
 #particles-js {
    height: 65%;
    width: 100%;
@@ -57,9 +58,11 @@ font-family: 'Roboto', sans-serif;
  
 html{
    scroll-behavior: smooth;/*efecto de la navegacion*/
-   background: var(--hoja);
-}
+  }
 
+  body{
+  background: var(--hoja);
+}
 
  /*****************/
 /*    header              **/
@@ -70,7 +73,6 @@ html{
    background-size: cover;
    height: 70vh;
    width: 100%;
-
 }
 
 .nav{
@@ -84,9 +86,11 @@ font-size: 1.4em;
 text-transform: uppercase;
 background-color: rgba(38, 39, 37,.5);
 }
+
 #nav__div{
    width: 100%;
 }
+
 #div__ul{
    display: flex;
    flex-direction: row;
@@ -94,6 +98,7 @@ background-color: rgba(38, 39, 37,.5);
    width: 100%;
    align-items: center;
 }
+
 #div__ul li {
 border: 1px solid green;
    list-style: none;
@@ -105,16 +110,13 @@ border: 1px solid green;
    text-decoration: none;
    font-weight: bold;
    transition: all 0.3s ease, opacity 0.5s ease;
-
 }
 
 #div__ul > li > a:hover{
    background-color: black;
    color: blanchedalmond;
    font-size: 1.4em;
-
 }
-
 
 /*---------------------------------------------------*/
 /*    contenido encabezado              **/
@@ -129,25 +131,31 @@ border: 1px solid green;
    justify-content: center;
    align-items: center;
  }
+
  .encabezado{
-    font-size:9rem;
+    font-size:8em;
     margin-bottom: 0;
  }
+
  #logo{
     width: 6rem;
    }
+
    #logo >img{
       width: 100%;
       transition: all 0.3s ease, opacity 0.5s ease;
    }
+
    #logo:hover>img{
       width: 140%;
-}
+  }
+
 .subtitulo{
    /* background-color: rgba(38, 39, 37,.5); */
    background-color: rgba(10, 10, 10,0.2);
    font-size: 4em;
 }
+
  .lenguajes {
    width: 1em;
    border: 0;
@@ -156,8 +164,8 @@ border: 1px solid green;
    object-position: center;
    align-self: center;
    background-color: rgba(255, 255, 255,0.9);
-   
  }
+
  .tituloPP{
     font-size: 2.5em;
     background-color: rgba(10, 10, 10,0.5);
@@ -173,8 +181,8 @@ main{
    height: auto;
    flex-wrap: wrap;
    width: 100%;
-   
 }
+
 /*****************/
 /*    sobre mi              **/
 /*****************/
@@ -189,9 +197,8 @@ main{
 justify-content: center;
 align-items: center;
 align-content: flex-start !important;
-
-
 }
+
 .mi_foto{
    width: 27%;
  margin: 0 1em 0 1em;
@@ -579,6 +586,87 @@ article {
 }
 
 
+/* _____________________________ */
+/*  menu-hamburgesa*/
+/* ------------------------------ */
+/*menu*/
+.panel {
+ 
+  position: fixed; /*encima de todo*/
+  z-index: 998; /*debajo del boton*/
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.85);
+  /*estiramos el panel*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  /*efecto*/
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  /*De arriba*/
+  /* transform: translate(0, -100%); */
+  /*De arriba*/
+  /* transform: translate(0, 100%); */
+  /*Derecha*/
+  /*  transform: translate(100%, 0); */
+  /*Izquierda*/
+  transform: translate(-100%, 0);
+}
+/*El opacity no es necesario, es q quieroq cuando se mueva tambien se oscuresca*/
+/*esta clase se quita y se pone*/
+.panel.is-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.panel-btn {
+  /* display: none; n sirve, hay q usar esto = visibility: hidden;*/
+  visibility: hidden;
+
+  position: fixed;
+  z-index: 999; /*el boton esta encima de todo*/
+  bottom: 15vh; /*abajo*/
+  right: 1vw; /*a la derecha*/
+  
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 0!important;
+  display: flex; /*estoy colocando las rayitas en el medio*/
+  justify-content: center;
+  align-items: center;;
+  background: rgba(255, 0, 64, 0.61) !important;
+}
+
+.menu {
+  width: inherit; /*hereda el tamaño de tu contenedor*/
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.menu a {
+  padding: 2rem;
+  width: inherit;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: blanchedalmond;
+  transition: all 0.3s ease; /* tiempo q paso la raya sobre los menus */
+}
+
+.menu a:hover {
+  font-weight: bold;
+  color: #18171c;
+  background-color: rgba(255, 0, 64, 0.61);
+}
 
 /* _____________________________ */
 /* Botones para cambiar tema */
@@ -618,19 +706,44 @@ article {
  /* _____________________________ */
 /*  media queries */
 /* ------------------------------ */
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px){
+   .encabezado{
+    font-size:6.3em;
+  }
+.sobreMi__parrafo{
+   font-size: 1.3em;
+  }
 
-@media only screen and (max-width: 830px) {
+}
+
+@media only screen and (max-width: 830px){
+  .nav{
+    height:1px;
+  }
+#nav__div{
+display: none;
+}
 
 
-
+  .encabezado{
+    font-size:5.8em;
+  }
+  .mi_foto{
+   width: 90%;
+  }
+.sobre_mi{
+width: 90%;
+}
+    /* _____________________________ */
+    /* Botones para cambiar tema */
+    /* ------------------------------ */
    .change-theme-button {
       position: fixed;
       z-index: 900;
       left: 1vw;
       /* right: calc(4.25rem + 1vw); */
       /*   transition: all 1 ease; */
-    
+
     }
     .change-theme-button::before {
       background-image: url(../images/moon.ico);
@@ -661,7 +774,9 @@ article {
     }
 }
  
-@media only screen and (max-width: 740px) {}
+@media only screen and (max-width:740px) {
+
+}
 
 @media only screen and (max-width: 600px) {}
 
