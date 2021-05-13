@@ -467,7 +467,7 @@ box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
    justify-content: center;
    width: 100%;
    height: 15vh;
- /*   border: 1px solid red; */
+   border: 1px solid red;
    padding: 0;
   
    
@@ -482,7 +482,7 @@ box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
    width: 30%;
    height: 4.5rem;
  
-   /* align-items: flex-start; */
+   
  }
  
  .btnImg {
