@@ -355,7 +355,9 @@ overflow: hidden; /* el borde de las img */
    width: 100%;
    height: auto;
    border: 1px solid black;
-   background: var(--hoja-juego);
+   background-image: url(../images/fondoJuego.jpg);
+   background-attachment:fixed;
+
    text-align: center;
     flex-basis: auto;
    flex-grow: 1;
@@ -371,14 +373,14 @@ overflow: hidden; /* el borde de las img */
  
  #encabezadoJuegos{
     width: 100%;
-
+color: white;
  }
  
   .juegoA{
-    height: 38rem;
-     /*  max-width: 420px; */
-/*  width: 40vw;****************************************** */
-  
+    height: 35rem;
+      /* max-width: 420px; */
+ width: 45%;
+  min-width: 22em;
    margin: 0 1rem;
    /* background:var(--juegoA); */
    background-image: url(../images/cielo.jpg);
@@ -389,6 +391,9 @@ overflow: hidden; /* el borde de las img */
    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
    color: #fff;
   margin-bottom: 0;
+    -webkit-box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
+-moz-box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
+box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
   }
  
  #ppt {
@@ -405,7 +410,7 @@ overflow: hidden; /* el borde de las img */
  }
 
  .tituloCuadro{
-    line-height: 0;
+    line-height: 2;
     padding: 0;
  }
  .titulocasilla{
@@ -442,7 +447,7 @@ overflow: hidden; /* el borde de las img */
       border-radius: 50%;
  }
  
- /* #result > img {
+/*  #result > img {
    width: 100%;
    background: #fffb;
    border-radius: 50%;
@@ -489,12 +494,36 @@ overflow: hidden; /* el borde de las img */
  box-sizing: border-box;
  
  }
+
+/***********************/
+
+/* https://codepen.io/rauldronca/pen/Pzrgzp */
+/* https://www.creativosonline.org/botones-css-gratuitos.html */
+/**************************/
+
+
+
+
+
+
  
  #juegoB{
-/*     width: 45vw;******************************************** */
-    background: rgba(255, 0, 64, 0.3);
+   width: 45%;
+   height: auto;
+     background-image: url(../images/juegoB.jpg);
     margin: 0;
     margin: 0 1rem;
+      -webkit-box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
+-moz-box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
+box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
+ }
+
+  #listaJuegos {
+   text-align: center;
+   padding: .1rem;
+   font-weight: bold;
+   font-size: 2rem;
+  
  }
 /***********************/
 /*  separador parallax **/
@@ -742,25 +771,6 @@ article {
 }
 
 
-/* article {
-  width: 45%;
-  text-align: justify;
-  margin: 0 10px;
-  padding: 0 5px;
-  font-size: 1.5em;
-
-}
-
-#lista {
-  list-style: none;
-  line-height: 1.5em;
-}
-
-#lista li {
-  padding-left: 10px;
-  padding-right: 10px;
-   padding-bottom: 1em;
-} */
 }
 @media only screen and (max-width: 951px){
     .mi_foto{
@@ -792,8 +802,14 @@ article {
  visibility: hidden;
 }
 
-
-
+  .juegoA{
+      /* max-width: 420px; */
+ width: 70%;
+}
+ #juegoB{
+   margin-top: 1rem;
+    width: 70%;
+ }
 
 
     /* _____________________________ */
@@ -843,6 +859,7 @@ article {
   .subtitulo{
    font-size: 3em;
 }
+
   #parallax_p{
 
 padding: 0 4em 0 4em;
