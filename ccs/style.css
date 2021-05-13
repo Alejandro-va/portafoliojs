@@ -707,6 +707,9 @@ article {
 /*  media queries */
 /* ------------------------------ */
 @media only screen and (max-width: 1024px){
+   .header{
+      text-align: center;
+   }
    .encabezado{
     font-size:6.3em;
   }
@@ -717,7 +720,11 @@ article {
 }
 
 @media only screen and (max-width: 830px){
-  .nav{
+   .encabezado{
+      font-size:5.8em;
+    }
+
+   .nav{
     height:1px;
   }
 #nav__div{
@@ -725,9 +732,7 @@ display: none;
 }
 
 
-  .encabezado{
-    font-size:5.8em;
-  }
+
   .mi_foto{
    width: 90%;
   }
@@ -775,9 +780,22 @@ width: 90%;
 }
  
 @media only screen and (max-width:740px) {
-
+  .encabezado{
+    font-size:4.5em;
+  }
+  .subtitulo{
+   font-size: 3em;
+}
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+
+   .encabezado{
+      font-size:4em;
+    }
+    .subtitulo{
+     font-size: 3em;
+  }
+}
 
 @media only screen and (max-width: 415px) {}
