@@ -260,7 +260,7 @@ flex-wrap: wrap;
 
 .card{
    justify-content: center;
-width: 20em;
+width: 22em;
 
 
 
@@ -632,8 +632,8 @@ article {
   bottom: 15vh; /*abajo*/
   right: 1vw; /*a la derecha*/
   
-  width: 3rem;
-  height: 3rem;
+  width: 2.8rem;
+  height: 2.8rem;
   border-radius: 50%;
   padding: 0!important;
   display: flex; /*estoy colocando las rayitas en el medio*/
@@ -706,6 +706,23 @@ article {
  /* _____________________________ */
 /*  media queries */
 /* ------------------------------ */
+@media screen and (min-width: 1024px) and (max-width: 1200px) { 
+  .sobreMi__parrafo{
+   font-size: 1.3em;
+  }
+/*   #parallax_p{
+  font-size: 2em;
+  color: #fff;
+padding: 0 5em 0 5em;
+text-align: justify;
+} */
+#parallax_p{
+
+padding: 0 4em 0 4em;
+
+} 
+
+}
 @media only screen and (max-width: 1024px){
    .header{
       text-align: center;
@@ -714,11 +731,24 @@ article {
     font-size:6.3em;
   }
 .sobreMi__parrafo{
-   font-size: 1.3em;
+   font-size: 1.1em;
   }
 
 }
+@media only screen and (max-width: 951px){
+    .mi_foto{
+   width: 90%;
+   margin-bottom: 1.3rem;
+  }
+.sobre_mi{
+width: 90%;
+}
+  #parallax_p{
 
+padding: 0 4em 0 4em;
+  font-size: 1.6em;
+}
+}
 @media only screen and (max-width: 830px){
    .encabezado{
       font-size:5.8em;
@@ -733,12 +763,8 @@ article {
 
 
 
-  .mi_foto{
-   width: 90%;
-  }
-.sobre_mi{
-width: 90%;
-}
+
+
     /* _____________________________ */
     /* Botones para cambiar tema */
     /* ------------------------------ */
@@ -786,6 +812,11 @@ width: 90%;
   .subtitulo{
    font-size: 3em;
 }
+  #parallax_p{
+
+padding: 0 4em 0 4em;
+  font-size: 1.5em;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -797,9 +828,11 @@ width: 90%;
      font-size: 3em;
   }
   #parallax_p{
-   font-size: 1px;
-}
 
+padding: 0 2.5em 0 2.5em;
+  font-size: 1.2em;
+}
+}
 @media only screen and (max-width: 415px) {
 
 }
