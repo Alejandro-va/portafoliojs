@@ -377,7 +377,7 @@ overflow: hidden; /* el borde de las img */
   .juegoA{
     height: 38rem;
      /*  max-width: 420px; */
- width: 40vw;
+/*  width: 40vw;****************************************** */
   
    margin: 0 1rem;
    /* background:var(--juegoA); */
@@ -491,7 +491,7 @@ overflow: hidden; /* el borde de las img */
  }
  
  #juegoB{
-    width: 45vw;
+/*     width: 45vw;******************************************** */
     background: rgba(255, 0, 64, 0.3);
     margin: 0;
     margin: 0 1rem;
@@ -728,7 +728,7 @@ article {
     height:1px;
   }
 #nav__div{
-display: none;
+ visibility: hidden;
 }
 
 
@@ -796,6 +796,10 @@ width: 90%;
     .subtitulo{
      font-size: 3em;
   }
+  #parallax_p{
+   font-size: 1px;
 }
 
-@media only screen and (max-width: 415px) {}
+@media only screen and (max-width: 415px) {
+
+}
