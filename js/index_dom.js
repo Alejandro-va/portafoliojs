@@ -4,6 +4,7 @@ import efectoTexto from "./efectoTexto.js";
 import maquinaDEscribir from "./maquinaDEscribir.js";
 import darkTheme from "./darkTheme.js";
 import hamburgerMenu from "./menu_hamburgesa.js";
+import scrollTopButton from "./boton_scroll.js";
 
 
 document.addEventListener('DOMContentLoaded', (e)=>{
@@ -19,4 +20,7 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 
   //menu hamburgesa
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
+
+  //btn scroll
+  scrollTopButton(".scroll-top-btn ")
 })

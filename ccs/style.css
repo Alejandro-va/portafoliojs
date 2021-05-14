@@ -753,6 +753,51 @@ width: 13rem;
   display: flex;
   justify-content: space-between;
 }
+
+
+
+/* _____________________________ */
+/*   ScrollTopButton   */
+/* ------------------------------ */
+
+.scroll-top-btn {
+  position: fixed;
+  z-index: 900;
+  bottom: 2vh;
+  /* right: calc(4.25rem + 1vw); */
+    right: 1vw; /*a la derecha*/
+  width: 3rem;
+  height:3rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgba(255, 0, 64, 0.61);
+  color: #222;
+  cursor: pointer;
+  outline: 0; /* elimino lalinea fea q se marca afuera */
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.scroll-top-btn:hover {
+  background-color: rgba(255, 0, 64, 0.3);
+  color: blue;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 1;
+}
+
+#up {
+  width: 1em;
+  height: 1em;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8); /*opacidada*/
+  padding-top: 0.2em;
+  box-sizing: content-box;
+}
 /* _____________________________ */
 /*  menu-hamburgesa*/
 /* ------------------------------ */
