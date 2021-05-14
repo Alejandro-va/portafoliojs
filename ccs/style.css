@@ -377,6 +377,9 @@ color: white;
  }
  
   .juegoA{
+position: relative;
+
+
     height: 35rem;
       /* max-width: 420px; */
  width: 45%;
@@ -462,28 +465,91 @@ box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
  }
  
  #group-btn {
+/**/
+   position: relative;
+/**/
+
+
     /* margin-top:1.5rem; */
    display: flex;
-   justify-content: center;
-   width: 100%;
+   justify-content: space-evenly;
+   width: 80%;
    height: 15vh;
-   border: 1px solid red;
+   /* border: 1px solid red; */
    padding: 0;
   
    
  }
- 
+ /**/
+ .btnMark::after, .button::before {
+   position: absolute;
+   content: "";
+   transition: all 0.5s;
+ }
+
  .btnMark {
-   background-color: rgb(72, 223, 110);
-   border: 4px solid black;
-   margin: 5px;
-   border-radius: 30%;
+    display: inline-block;
+position: absolute;
+transform: translate(53%, 15%);
+vertical-align: middle;
+text-decoration: none;
+/* font-size: 4vw; */
+transition: all 0.5s;
+background-color: #3498db;
+
+
+   /* ackground-color: rgb(72, 223, 110); */
+  /*  border: 4px solid black; */
+ /*   margin: 5px; */
+  /*  border-radius: 30%; */
    cursor: pointer;
-   width: 30%;
-   height: 4.5rem;
+   width: 22%;
+   /* height: 4.5rem; */
  
    
  }
+
+.btnMark::before {
+  bottom: -15px;
+  height: 15px;
+  width: 100%;
+  left: 8px;
+  transform: skewX(45deg);
+  background-color: #196090;
+}
+.btnMark::after {
+   right: -15px;
+   height: 100%;
+   width: 15px;
+   bottom: -8px;
+   transform: skewY(45deg);
+   background-color: #124364;
+ }
+ .btnMark:active {
+   margin-left: 10px;
+   margin-top: 10px;
+ }
+ .btnMark:active::before {
+   bottom: -5px;
+   height: 5px;
+   left: 3px;
+ }
+ .btnMark:active::after {
+   right: -5px;
+   width: 5px;
+   bottom: -3px;
+ }
+
+#rock{
+   left: 0;
+}
+#scissors{
+   right: 0;
+}
+/**/
+
+
+
  
  .btnImg {
    width: 5rem;
@@ -511,7 +577,10 @@ box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
    width: 45%;
    height: auto;
      background-image: url(../images/juegoB.jpg);
-    margin: 0;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+    
     margin: 0 1rem;
       -webkit-box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
 -moz-box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
