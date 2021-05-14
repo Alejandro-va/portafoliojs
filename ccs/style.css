@@ -386,7 +386,11 @@ position: relative;
   min-width: 22em;
    margin: 0 1rem;
    /* background:var(--juegoA); */
-   background-image: url(../images/cielo.jpg);
+   background-image: url(../images/juegoB.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
