@@ -494,7 +494,7 @@ box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
  .btnMark {
     display: inline-block;
 position: absolute;
-transform: translate(53%, 61%);
+transform: translate(53%, 30%);
 vertical-align: middle;
 text-decoration: none;
 /* font-size: 4vw; */
