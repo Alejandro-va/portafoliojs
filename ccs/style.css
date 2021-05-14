@@ -481,7 +481,7 @@ box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
    
  }
  /**/
- .btnMark::after, .button::before {
+ .btnMark::after, .btnMark::before {
    position: absolute;
    content: "";
    transition: all 0.5s;
@@ -490,7 +490,7 @@ box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
  .btnMark {
     display: inline-block;
 position: absolute;
-transform: translate(53%, 15%);
+transform: translate(53%, 61%);
 vertical-align: middle;
 text-decoration: none;
 /* font-size: 4vw; */
@@ -552,7 +552,7 @@ background-color: #3498db;
 
  
  .btnImg {
-   width: 5rem;
+   width: 3.5rem;
   text-align: center;
   object-fit: cover;
   object-position: 50% 50%;
