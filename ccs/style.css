@@ -1069,6 +1069,7 @@ padding: 0 2.5em 0 2.5em;
 .footer__content{
   height: 90%;
 padding-top: 4rem;
+justify-content: space-between;
 }
 
 #redes>p{
