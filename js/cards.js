@@ -19,8 +19,8 @@ function mostrarDatos(cartas) {
       clone.querySelector('.card_title').textContent=el.title;
       clone.querySelector('.card_description').textContent=el.description;
       clone.querySelector('.footer')
-      clone.querySelector('a').setAttribute('href', el.link1 )
-      clone.querySelector('a').setAttribute('href', el.link2 )
+      clone.querySelectorAll('a')[0].setAttribute('href', el.link1 )
+      clone.querySelectorAll('a')[1].setAttribute('href', el.link2 )
 
       fragment.appendChild(clone)
    });
