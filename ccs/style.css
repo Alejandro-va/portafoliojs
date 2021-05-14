@@ -357,7 +357,10 @@ overflow: hidden; /* el borde de las img */
    border: 1px solid black;
    background-image: url(../images/fondoJuego.jpg);
    background-attachment:fixed;
-
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   
    text-align: center;
     flex-basis: auto;
    flex-grow: 1;
