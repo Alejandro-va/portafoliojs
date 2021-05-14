@@ -19,9 +19,13 @@ function mostrarDatos(cartas) {
       clone.querySelector('.card_title').textContent=el.title;
       clone.querySelector('.card_description').textContent=el.description;
       clone.querySelector('.footer')
+     if (el.id === 4) {
+       clone.querySelectorAll('a')[0].innerHTML = `<img  alt="" src="#"  style="margin-top: 5px; width:30px; cursor: not-allowed; "/>`
+       clone.querySelectorAll('a')[1].textContent = ""
+     } else {
       clone.querySelectorAll('a')[0].setAttribute('href', el.link1 )
       clone.querySelectorAll('a')[1].setAttribute('href', el.link2 )
-
+     }
       fragment.appendChild(clone)
    });
    $cards.appendChild(fragment)
