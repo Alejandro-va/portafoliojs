@@ -1,26 +1,22 @@
-import cards from "./cards.js";
-import piedarPapelTijera from "./piedraPapelTijera.js";
-import efectoTexto from "./efectoTexto.js";
-import maquinaDEscribir from "./maquinaDEscribir.js";
-import darkTheme from "./darkTheme.js";
 import hamburgerMenu from "./menu_hamburgesa.js";
 import scrollTopButton from "./boton_scroll.js";
+import darkTheme from "./darkTheme.js";
+import piedarPapelTijera from "./piedraPapelTijera.js"
 
+const d = document;
 
-document.addEventListener('DOMContentLoaded', (e)=>{
-   cards('cards');
+//cargo todos los componenetes del htm cuando se craga para luego enviarlos por parametros a los modulos
+d.addEventListener("DOMContentLoaded", (e) =>{
+   
+   //menu hamburgesa
+   hamburgerMenu(".panel-btn", ".panel", ".menu a")
+//el boton de la hamburguesa, el menu q sale y entra, los link del menu
 
-   piedarPapelTijera("rock", "paper","scissors");
+   //btn scroll
+   scrollTopButton(".scroll-top-btn ")
 
-   efectoTexto("movimiento");
+  darkTheme("#theme-button")
 
-   maquinaDEscribir('encabezado', 'subtitulo');
+  piedarPapelTijera("rock", "paper","scissors")
 
-   darkTheme("#theme-button");
-
-  //menu hamburgesa
-  hamburgerMenu(".panel-btn", ".panel", ".menu a");
-
-  //btn scroll
-  scrollTopButton(".scroll-top-btn ")
 })

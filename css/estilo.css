@@ -1,0 +1,1046 @@
+/* variables de color para tema primario 'light' */
+:root {
+  --letras-menu-panel: #222;
+  --panel: rgba(34, 34, 34, 0.85);
+  --hoja:  rgba(255, 255, 255,.9);
+  --text-p: #222;
+  --panelNav: rgb(220,220,220)
+  --main-card: radial-gradient(circle, #fff, #bff);
+  --panel-visitas-nav:radial-gradient(circle, #fff, #bbb);
+  --border-card:  #bbb;
+  --hoja-juego:radial-gradient(circle, #fff, #bbb);
+  --juegoA:radial-gradient(circle, #18171c, rgb(33, 121, 77));
+
+}
+/* rgb(241, 241, 250);;
+  --main-card: rgb(241, 241, 243); */
+/* variables de color para tema secundario 'dark' */
+body.dark-theme {
+
+  --letras-menu-panel: #fffb;
+  --panel: #ff5f5f;
+  --hoja: #18171c;
+  --text-p: rgba(252, 245, 245, 0.979);
+  --panelNav: #1d1d1d;
+  --main-card: #1d1d1d;
+  --panel-visitas-nav:radial-gradient(circle, #fff, #bbb);
+  --border-card:  #fff;
+  --hoja-juego:radial-gradient(circle, #fff, #bbb);
+ 
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+   scroll-behavior: smooth;/*efecto de la navegacion*/
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  overflow-x: hidden; /*se oculte todo lo q se desborde y n genere barra de desplazamiento*/
+  /* max-width: 1200px; */
+  /* height: 100%; */
+}
+
+/* _____________________________ */
+/*  Header*/
+/* ------------------------------ */
+.contenido-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/oscuro.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  z-index: 99;
+  opacity: 0.85;
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.cajita {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 5%;
+  font-style: italic;
+}
+.cajita .encabezado {
+  color: blanchedalmond;
+  font-size: 5em;
+}
+.cajita > h3 {
+  color: blanchedalmond;
+  font-size: 3em;
+}
+
+.cajita .tituloPP {
+  color: blanchedalmond;
+  border-top: none;
+  font-size: 2em;
+  font-style: italic;
+  display: inline-block;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.correo {
+  display: none;
+  position: absolute;
+  font-size: 1.2em;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 0;
+  z-index: 50;
+}
+
+/* _____________________________ */
+/*  nav*/
+/* ------------------------------ */
+.nav {
+  position: sticky;
+  top: 0;
+ /*  display: flex;
+  justify-content: center; */
+  background: var(--panel-visitas-nav);
+  width: 100%;
+  height: 3.7em;
+  z-index: 20;
+
+}
+#nav__div{
+width: 100%;
+border: 1px solid yellow;
+text-align: center;
+justify-content: center;
+}
+#div__ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+#div__ul>li{
+  border: 1px solid red;
+}
+#div__ul>li>a{
+text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background: var(--hoja);
+  height: 100%;
+
+   overflow-y: hidden;
+}
+
+/* _____________________________ */
+/*  sobre mi*/
+/* ------------------------------ */
+.sobre-mi {
+   /* padding-top: 4rem; */
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  overflow-y: hidden; 
+}
+
+.sobre-mi > h2 {
+  text-align: center;
+  color: var(--text-p);
+
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.sobre-mi .sobreMi__parrafo {
+/*   padding: 0 1em 2em 1em; */
+padding: 0 3em 2em 3em;
+  margin: 1px 0;
+  height: 100%;
+  line-height: 1.5rem;
+  display: inline-block;
+  color: var(--text-p);
+  border: none;
+}
+.lenguajes {
+  width: 1em;
+  border: 0;
+  padding: 0;
+  object-fit: fill;
+  object-position: center;
+  align-self: center;
+}
+/* _____________________________ */
+/*  visitas y reloj*/
+/* ------------------------------ */
+.visita-reloj {
+  width: 100%;
+  height: 5em;
+  background: var(--panel-visitas-nav);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contador {
+  height: 90%;
+  width: 45%;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.contador > h2 {
+  width: 30%;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+    font-weight: bold;
+  font-size: 2.5rem;
+}
+.contador .visitado {
+  width: 45%;
+}
+.contenedor-img {
+  height: 4rem;
+  width: 14rem;
+}
+.vista {
+  border: 0 solid;
+  display: inline;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+.reloj {
+  height: 80%;
+  width: 45%;
+  background-color: chartreuse;
+  display: block;
+}
+/* _____________________________ */
+/*  cards*/
+/* ------------------------------ */
+#proyectos > h2 {
+   /* padding-top: 4rem; */
+  text-align: center;
+  color: var(--text-p);
+      font-weight: bold;
+  font-size: 2.5rem;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: hidden; 
+  
+}
+.card {
+  /* radial-gradient(circle, #fff, #bbb); */
+  background:var(--main-card);
+  width: 17em;
+  /* min-width: 15.7em; */
+  height: 27em;
+  border-radius: 2%;
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+/*   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
+  /*pensando*/
+  -webkit-box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
+-moz-box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
+box-shadow: 4px -3px 9px -4px rgba(224,217,224,0.67);
+}
+
+.card > img {
+  width: 100%;
+  height: 15.5em;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: brightness(0.8); /*opacidada*/
+}
+.card h2 {
+  margin-top: 5px;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:var( --text-p);
+}
+
+p {
+  height: 4.5em;
+  margin: 0.5em 1em;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--border-card);
+  align-items: flex-start;
+  text-align: justify;
+  padding-top: 5px;
+  color:var( --text-p);
+}
+
+.footer {
+  background: var(--panel-visitas-nav);
+  height: 2.5em;
+  border-top: 1px solid #fff;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 2em;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.ico {
+  width: 2em;
+  height: 2em;
+  padding: 1px;
+  margin: 1px;
+  display: flex;
+  transition-duration: 2s;
+}
+
+.footer:hover {
+  color: rgb(90, 211, 241);
+}
+.ico:hover {
+  background: rgb(210, 230, 235);
+  border-radius: 60%;
+  width: 2.5em;
+  transform: rotate(0.5turn);
+}
+/* _____________________________ */
+/*  juego*/
+/* ------------------------------ */
+.juego {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  background: var(--hoja-juego);
+  text-align: center;
+   flex-basis: auto;
+  flex-grow: 1;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#encabezadoJuegos{
+   width: 100%;
+   font-weight: bold;
+   font-size: 2.5rem;
+}
+
+ .juegoA{
+   height: 38rem;
+    /*  max-width: 420px; */
+width: 45vw;
+ 
+  margin: 0 1rem;
+  /* background:var(--juegoA); */
+  background-image: url(../images/cielo.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 5px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  color: #fff;
+ margin-bottom: 0;
+ }
+
+#ppt {
+  text-align: center;
+  padding: .1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.marcacion {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.tituloCuadro{
+   line-height: 0;
+   padding: 0;
+}
+.titulocasilla{
+   padding: 0
+}
+.win,.lost,.tie{
+   background: #fff;
+   padding: 2rem;
+   box-sizing: border-box;
+   border: 3px solid #18171c;
+margin-bottom: 1rem;
+font-size: 2em;
+font-weight: bold;
+color: #000;
+}
+
+
+#result {
+display: flex;
+justify-content: space-evenly;
+line-height: .5rem;
+}
+.resulDiv__img{
+width: 6rem;
+/* border: 2px solid red; */
+}
+.vs{
+  font-weight: bold;
+  font-size: 2em;
+}
+.imgPpt{
+   width: 100%;
+   background: #fffb;
+     border-radius: 50%;
+}
+
+/* #result > img {
+  width: 100%;
+  background: #fffb;
+  border-radius: 50%;
+  object-fit: cover;
+ 
+} */
+
+#start-text {
+  font-size: 1.5em;
+  padding: 1em;
+  font-weight: bold;
+}
+
+#group-btn {
+   /* margin-top:1.5rem; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 15vh;
+/*   border: 1px solid red; */
+  padding: 0;
+}
+
+.btnMark {
+  background: var(--hoja-juego);
+  border: 4px solid black;
+  margin: 5px;
+  border-radius: 30%;
+  cursor: pointer;
+  width: 30%;
+  height: 4.5rem;
+  /* align-items: flex-start; */
+}
+
+.btnImg {
+  width: 5rem;
+ text-align: center;
+ object-fit: cover;
+ object-position: 50% 50%;
+padding: 10px;
+box-sizing: border-box;
+}
+
+#juegoB{
+   width: 45vw;
+   background: rgba(255, 0, 64, 0.3);
+   margin: 0;
+   margin: 0 1rem;
+}
+/* _____________________________ */
+/*  Separador Parallax*/
+/* ------------------------------ */
+
+.separador {
+  width: 100%;
+ /*  height: 50vh;
+  max-height: 300px; */
+  background-image: url(../images/calle.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 30px;
+  border-top: thick double rgb(241, 241, 250);
+  border-bottom: thick double rgb(241, 241, 250);
+   flex-basis: auto;
+  flex-grow: 1;
+}
+
+.separador > p {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: blanchedalmond;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border: none;
+  padding: 4rem 1rem;
+}
+/* _____________________________ */
+/*  articulos*/
+/* ------------------------------ */
+.articulos {
+   /* padding-top: 4rem; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+ /*  padding-bottom: 10em; */
+  color: var(--text-p);
+  overflow-y: hidden; 
+/* max-height: 630px; */
+  flex-basis: auto;
+  flex-grow: 1;
+}
+#aritculosH2{
+  width: 100%;
+     font-weight: bold;
+   font-size: 2.5rem;
+   text-align: center;
+       padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.articulos__titulos {
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--text-p);
+}
+article {
+  width: 45%;
+  /* min-width: 350px; */
+  text-align: justify;
+  margin: 0 10px;
+  padding: 0 5px;
+   overflow-y: hidden; 
+}
+
+#lista {
+  list-style: none;
+  line-height: 1.5em;
+}
+#lista li {
+  padding-bottom: 1em;
+}
+.articulo {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+/* _____________________________ */
+/*  footer*/
+/* ------------------------------ */
+.footer-pag {
+  width: 100%;
+  font-style: italic;
+  /*  margin-top: 400px; */
+  height: 80vh;
+
+  color: blanchedalmond;
+  background-image: url(../images/calle.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: thick double rgb(241, 241, 250);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 11rem;
+  justify-content: space-around;
+  font-style: italic;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.footer-donde {
+  line-height: 10px;
+}
+
+.footer-donde > #footerNombre {
+  padding-top: 1em;
+  font-size: 4.5em;
+  font-weight: 600;
+}
+
+.footer-donde > #fDonde {
+  font-size: 2em;
+  padding-bottom: 1rem;
+}
+.footer-invitacion {
+  line-height: 10px;
+}
+.footer-invitacion > h4 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.footer-invitacion .msg {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: blanchedalmond;
+}
+.diseño {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ /*  background: rgba(29, 28, 28, 0.918); */
+  border-top: thick double rgb(241, 241, 250);
+    border-bottom: thick double rgb(241, 241, 250);
+      background-image: url(../images/cielo.jpg);
+}
+.diseño > h5 {
+  padding: 0;
+  font-size: 1em;
+  display: flex;
+  align-items: flex-end;
+    color: blanchedalmond;
+    line-height: 0rem;
+}
+.redes {
+  width: 45%;
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-evenly;
+  /* border: 1px solid #fff;
+  background-color: yellow; */
+}
+
+.red{
+  width: 2.5em;
+}
+
+/* _____________________________ */
+/*  menu-hamburgesa*/
+/* ------------------------------ */
+/*menu*/
+.panel {
+ 
+  position: fixed; /*encima de todo*/
+  z-index: 998; /*debajo del boton*/
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.85);
+  /*estiramos el panel*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  /*efecto*/
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  /*De arriba*/
+  /* transform: translate(0, -100%); */
+  /*De arriba*/
+  /* transform: translate(0, 100%); */
+  /*Derecha*/
+  /*  transform: translate(100%, 0); */
+  /*Izquierda*/
+  transform: translate(-100%, 0);
+}
+/*El opacity no es necesario, es q quieroq cuando se mueva tambien se oscuresca*/
+/*esta clase se quita y se pone*/
+.panel.is-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.panel-btn {
+  /* display: none; n sirve, hay q usar esto = visibility: hidden;*/
+  visibility: hidden;
+
+  position: fixed;
+  z-index: 999; /*el boton esta encima de todo*/
+  bottom: 15vh; /*abajo*/
+  right: 1vw; /*a la derecha*/
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex; /*estoy colocando las rayitas en el medio*/
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 64, 0.61);
+}
+
+.menu {
+  width: inherit; /*hereda el tamaño de tu contenedor*/
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.menu a {
+  padding: 2rem;
+  width: inherit;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: blanchedalmond;
+  transition: all 0.3s ease; /* tiempo q paso la raya sobre los menus */
+}
+
+.menu a:hover {
+  font-weight: bold;
+  color: #18171c;
+  background-color: rgba(255, 0, 64, 0.61);
+}
+
+/* _____________________________ */
+/*   ScrollTopButton   */
+/* ------------------------------ */
+
+.scroll-top-btn {
+  position: fixed;
+  z-index: 900;
+  bottom: 2vh;
+  /* right: calc(4.25rem + 1vw); */
+    right: 1vw; /*a la derecha*/
+  width: 3rem;
+  height:3rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgba(255, 0, 64, 0.61);
+  color: #222;
+  cursor: pointer;
+  outline: 0; /* elimino lalinea fea q se marca afuera */
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.scroll-top-btn:hover {
+  background-color: rgba(255, 0, 64, 0.3);
+  color: blue;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 1;
+}
+
+#up {
+  width: 1em;
+  height: 1em;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8); /*opacidada*/
+  padding-top: 0.2em;
+  box-sizing: content-box;
+}
+/* _____________________________ */
+/* Botones para cambiar tema */
+/* ------------------------------ */
+
+.change-theme-button{
+  display: block;
+  position: absolute;
+  z-index: 900;
+  right: 9vw;
+
+  /* right: calc(4.25rem + 1vw); */
+  /*   transition: all 1 ease; */
+
+}
+.change-theme-button::before {
+  background-image: url(../images/moon.ico);
+  background-position: center;
+  background-size: cover;
+  /*  content: "🌞"; */
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  /*  bottom: 17vh; */
+     cursor: pointer;
+}
+
+.dark-theme .change-theme-button::before {
+  background-image: url(../images/sun.ico);
+  background-position: center;
+  background-size: cover;
+  /* content:   "🌝" ; */
+  content: "";
+}
+/* _____________________________ */
+/*  media queries */
+/* ------------------------------ */
+@media only screen and (max-width: 830px) {
+
+   .sobre-mi .sobreMi__parrafo {
+        padding: 0 1em 2em 1em;
+   }
+  .card {
+    width: 45%;
+  }
+
+/*   .separador {
+  width: 100%;
+  height: 50vh;
+  max-height: 380px;
+} */
+   .juegoA{
+     width: 100%;
+   }
+   .resulDiv__img{
+/* width: 6rem; */
+/* border: 2px solid red; */
+}
+.btnImg {
+    width: 4rem;
+}
+   .btnMark { 
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 5.2rem;
+   }
+   #juegoB{
+   display: none;
+  }
+.articulos{
+  padding-bottom: 10em;
+}
+}
+
+@media only screen and (max-width: 740px) {
+  #edicion{
+    display: none;
+  }
+  .cajita .encabezado {
+    font-size: 2.7em;
+  }
+  .cajita > h3 {
+    font-size: 2.5em;
+  }
+
+  .cajita .tituloPP {
+    font-size: 1.2em;
+  }
+  .correo {
+    display: block;
+  }
+
+  .nav {
+    height: 0.2em;
+  }
+  #nav__div{
+    display: none;
+  }
+
+  .visita-reloj {
+    height: 8rem;
+    width: 100%;
+    text-align: center;
+  }
+  .contador {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contador > h3 {
+    width: 80%;
+  }
+  .contador .visitado {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+  .reloj {
+    display: none;
+  }
+   .card {
+    width: 55%;
+  }
+/*   .articulos{
+    max-height: 700px;
+  } */
+  article {
+    width: 80%;
+  }
+  .juegoA{
+     width: 100%;
+  }
+  
+  .footer-pag {
+    padding-left: 7rem;
+  }
+
+  .footer-donde {
+    line-height: 1rem;
+  }
+  .footer-donde > #footerNombre {
+    font-size: 2.7em;
+  }
+
+  .footer-donde > #fDonde {
+    font-size: 1.7em;
+  }
+
+  .footer-invitacion > h4 {
+    font-size: 1.2em;
+  }
+  .footer-invitacion .msg {
+    font-size: 1.2em;
+  }
+  .diseño {
+    flex-wrap: wrap;
+  }
+  .diseño > h5 {
+    font-size: 1em;
+    align-items: center;
+  }
+  .redes {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+/* _____________________________ */
+/* Botones para cambiar tema */
+/* ------------------------------ */
+
+  .change-theme-button {
+  position: fixed;
+  z-index: 900;
+  left: 1vw;
+  /* right: calc(4.25rem + 1vw); */
+  /*   transition: all 1 ease; */
+
+}
+.change-theme-button::before {
+  background-image: url(../images/moon.ico);
+  background-position: center;
+  background-size: cover;
+  /*  content: "🌞"; */
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+   bottom: 15vh;
+     cursor: pointer;
+}
+
+.dark-theme .change-theme-button::before {
+  background-image: url(../images/sun.ico);
+  background-position: center;
+  background-size: cover;
+  /* content:   "🌝" ; */
+  content: "";
+}
+
+/* _____________________________ */
+/* Botones para cambiar tema */
+/* ------------------------------ */
+.panel-btn {
+   visibility: visible;
+}
+
+
+}
+
+@media only screen and (max-width: 600px) {
+/*  main{
+  height: 476;
+} */
+  .card {
+    width: 22em;
+  }
+.btnImg {
+  width: 4rem;
+}
+  .footer-pag {
+    justify-content: center;
+    padding-left: 2rem;
+  }
+
+  .footer-donde >#footerNombre {
+    font-size: 3em;
+  }
+
+  .footer-donde > #fDonde {
+    font-size: 1.5em;
+
+  }
+
+  .footer-invitacion > h4 {
+    font-size: 1.2em;
+  }
+  .footer-invitacion .msg {
+    font-size: 1.2em;
+  }
+
+  .diseño > h5 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .cajita .encabezado {
+    font-size: 2em;
+  }
+  .cajita > h3 {
+    font-size: 2em;
+  }
+
+  .cajita .tituloPP {
+    font-size: 1em;
+  }
+  .btnMark {
+     height: 4.3rem;
+  }
+/* main{
+  height: 500vh;
+} */
+
+
+  .footer-pag {
+    padding-left: 2rem;
+  }
+
+  .footer-invitacion .msg {
+    font-size: 1em;
+  }
+}

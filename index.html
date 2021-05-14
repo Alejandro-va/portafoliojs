@@ -5,111 +5,101 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./ccs/movimiento.css">
-  <link rel="stylesheet" href="./ccs/style.css">
-  <link rel="stylesheet" href="./ccs/normalize.css">
-
-  <!-- font-Roboto -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,700&display=swap"
-    rel="stylesheet">
-
+  <title>Menu</title>
   <!-- hamburguesa -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
 
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css"
+    integrity="sha512-tpsEzNMLQS7w9imFSjbEOHdZav3/aObSESAL1y5jyJDoICFF2YwEdAHOPdOr1t+h8hTzar0flphxR76pd0V1zQ=="
+    crossorigin="anonymous" />
+
+
+  <!-- revisar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" href="./css/normalize.css">
 </head>
 
 <body>
-  <div class="container">
+
+
+  <!-- behavior="alternate" -->
+
+  <div class="contenido-header">
+
     <!-- ID Particles.js -->
-
-    <header>
-
-      <div class="header">
-
-        <div id="particles-js"></div>
-
-        <nav class="nav">
-          <button class="change-theme-button" id="theme-button"></button>
-          <div id="nav__div">
-            <ul id="div__ul">
-              <li><a href="#sobreMi">Sobre mi</a></li>
-              <li><a href="#proyectos">Proyectos</a></li>
-              <div id="logo"><img src="./images/jahz-2.png" alt=""></div>
-              <li><a href="#juego">Juegos</a></li>
-              <li><a href="#articulos">Artículos</a></li>
-            </ul>
-          </div>
-        </nav>
+    <div id="particles-js"></div>
 
 
-        <div class="cabecera__img">
-          <!-- contenido -->
+    <!-- contenido -->
+    <div class="cajita">
 
-          <div class="cabecera__contenedor">
+      <h1 class="encabezado">Jesús Hernández</h1>
+      <h3>Programador</h3>
+      <p class="tituloPP">
+        Javascript <img class="lenguajes" alt="" src="./images/js.ico" />,
+        React <img class="lenguajes" alt="" src="./images/react.ico" />,
+        Css <img class="lenguajes" alt="" src="./images/css.ico" />,
+        Html <img class="lenguajes" alt="" src="./images/htmls.ico" />,
+        Github <img class="lenguajes" alt="" src="./images/caritagits.ico" />.
+      </p>
+    </div>
+    <div class="correo">
+      <a href="mailto:parapruebas5162@gmail.com"><img class="ico" src="./images/gmail.ico" alt="" title="netlify"></a>
+    </div>
+  </div>
 
-            <h1 class="encabezado"></h1><!-- Jesús Hernández -->
-            <h3 class="subtitulo"></h3><!-- Programador -->
 
-          </div>
+  <nav class="nav">
 
-        </div>
+    <button class="change-theme-button" id="theme-button"></button>
 
-        <div class="correo">
-          <a href="mailto:parapruebas5162@gmail.com"><img class="ico" src="./images/gmail.ico" alt=""
-              title="netlify"></a>
+    <div id="nav__div">
+      <ul id="div__ul">
+        <li><a href="#sobreMi">Sobre mi</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#juego">Juegos</a></li>
+        <li><a href="#articulos">Artículos</a></li>
+      </ul>
+    </div>
 
+  </nav>
 
-
-        </div>
+  <main>
 
 
 
-    </header>
-
-    <main>
-      <h2 class="encabezados  caption" id="sobreMi">Sobre mi </h2>
-
-      <div class="datos">
-
-        <div class="mi_foto">
-          <img src="./images/gato.jpg" alt="">
-
-
-
-
-          <FONT FACE="Impact">
-            <MARQUEE BGCOLOR="#FFFF00" direction="lesf" width="100%" height="40px" style="border:dashed red
-                               ;line-height:40px; font-size: 30px;">
-              PORTAFOLIO EN EDICIÓN</MARQUEE>
-          </FONT>
-
-
-
-
-
-
-        </div>
-
-        <div class="sobre_mi">
-          <p class="sobreMi__parrafo">Desarrollador Web Junior (Front End) con 2 años de experiencia, conocimientos
-            iniciados en distintos lenguajes de programación y manejo de código, tales como
-            Javascript <img class=" lenguajes" alt="" src="./images/js.ico" />,
-            Reactjs <img class=" lenguajes" alt="" src="./images/react.ico" />,
-            Css <img class=" lenguajes" alt="" src="./images/css.ico" /> y
-            HTML <img class=" lenguajes" alt="" src="./images/htmls.ico" />. La lógica analítica y de resolución de
-            problemas que se desarrolla con la programación me permite aplicarla no solo para la creación de sistemas y
-            procesos, si no como parte de la vida diaria, ser programador es aprender todos los días un poco más, pero
-            sobre todo es mi pasión. De igual forma tambien poseo conocimientos iniciados en
-            Php <img class=" lenguajes" alt="" src="./images/php.ico" />,
-            Mysql <img class=" lenguajes" alt="" src="./images/mysql.ico" />
-            y Nodejs <img class=" lenguajes" alt="" src="./images/nodejs.ico" />.</p>
-
-        </div>
+    <div class="sobre-mi" id="sobreMi">
+      <div id="edicion">
+        <FONT FACE="Impact">
+          <MARQUEE BGCOLOR="#FFFF00" direction="lesf" width="100%" height="40px"
+            style="border:dashed red;line-height:40px; font-size: 30px;">
+            PORTAFOLIO EN EDICIÓN</MARQUEE>
+        </FONT>
       </div>
+      <h2>Sobre mi <img class="lenguajes" alt="" src="./images/sobreMis.ico" /></h2>
+      <p class="sobreMi__parrafo">Inquisitivo, perseverante, proactivo y autodidacta, enfocado en el desarrollo web,
+        especificamente Front-end, mediante
+        JavaScript <img class=" lenguajes" alt="" src="./images/js.ico" />, Reactjs <img class=" lenguajes" alt=""
+          src="./images/react.ico" />, Css <img class=" lenguajes" alt="" src="./images/css.ico" /> y Html <img
+          class=" lenguajes" alt="" src="./images/htmls.ico" />, de igual forma tambien poseo conocimientos iniciados en
+        Php <img class=" lenguajes" alt="" src="./images/php.ico" />, Mysql <img class=" lenguajes" alt=""
+          src="./images/mysql.ico" /> y Nodejs <img class=" lenguajes" alt="" src="./images/nodejs.ico" />.</p>
+    </div>
 
-      <!--       <div class="contador">
+    <div class="visita-reloj">
+
+      <div class="contador">
+
         <h2> Visitas</h2>
         <div class="visitado">
           <div class="contenedor-img">
@@ -117,192 +107,181 @@
               src="https://counter2.stat.ovh/private/contadorvisitasgratis.php?c=nsladh3ft58tsz8wm1zkgd4g56ju8np7" />
           </div>
         </div>
+
+      </div>
+
+      <div class="reloj">
+        <script>
+          let fecha = new Date()
+
+          const reloj = document.getElementsByClassName('reloj')[0]
+          reloj.innerHTML = `<span>${fecha.toLocaleString()}</span>`
+        </script>
+      </div>
+
+    </div>
+
+    <div id="proyectos">
+      <h2>Proyectos <img class="lenguajes" alt="" src="./images/project.ico" /></h2>
+    </div>
+
+    <div class="cards"></div>
+    <!--         <FONT FACE="Impact">
+          <MARQUEE BGCOLOR="#FFFF00" direction="lesf" width="100%" height="40px" style="border:dashed red
+               ;line-height:40px; font-size: 30px;">
+            PORTAFOLIO EN EDICIÓN</MARQUEE>
+        </FONT>
       </div> -->
 
-      <div id="proyectos">
-        <h2 class="caption">Proyectos</h2>
-      </div>
-      <div class="cards movimiento">
+    <div id="juego" class="juego">
 
-      </div>
-
-      <div id="juego" class="juego">
-
-        <div id="encabezadoJuegos">
-          <span>
-            <h2 class="caption">Juegos</h2><img class="lenguajes" alt="" src="./images/juegos.ico" />
-          </span>
-        </div>
-
-        <div class="juegoA">
-
-          <h2 id="ppt">
-            <!-- Rock, Papel and Scissors -->
-            Piedra, Papel y Tijeras
-          </h2>
-
-
-          <div class="marcacion">
-
-            <div class="tituloCuadro">
-              <h4 class="titulocasilla">Ganadas</h4>
-              <div class="win">0</div>
-            </div>
-
-            <div class="tituloCuadro">
-              <h4 class="titulocasilla">Perdidas</h4>
-              <div class="lost">0</div>
-            </div>
-
-            <div class="tituloCuadro">
-              <h4 class="titulocasilla">Empates</h4>
-              <div class="tie">0</div>
-            </div>
-
-          </div>
-          <div id="start-text">
-            Elige una opción para iniciar
-          </div>
-          <div id="result">
-
-            <div class="resulDiv__img">
-              <span class="vs">tu</span>
-              <br>
-              <br>
-              <br>
-              <br>
-              <img class="imgPpt" id="user-img" src="../images/rock.svg" alt="">
-            </div>
-            <span class="vs"> vs</span>
-            <div class="resulDiv__img">
-              <span class="vs"> comp</span>
-              <br>
-              <br>
-              <br>
-              <br>
-              <img class="imgPpt" id="machine-img" src="../images/rock.svg" alt="">
-            </div>
-
-          </div>
-
-          <div id="group-btn">
-
-            <button id="rock" type="button" class="btnMark">
-              <img class="btnImg" src="../images/piedra.ico" alt="" />
-            </button>
-
-            <button id="paper" type="button" class="btnMark">
-              <img class="btnImg" src="../images/papel.ico" alt="" />
-            </button>
-
-            <button id="scissors" type="button" class="btnMark button">
-              <img class="btnImg" src="../images/tijera.ico" alt="" />
-            </button>
-
-          </div>
-
-        </div>
-
-        <div id="juegoB">
-          <h2 id="listaJuegos">
-            <!-- Rock, Papel and Scissors -->
-            Listado de juegos
-          </h2>
-        </div>
+      <div id="encabezadoJuegos">
+        <span>JUEGOS<img class="lenguajes" alt="" src="./images/juegos.ico" /></span>
       </div>
 
+      <div class="juegoA">
 
-      <!-- separador parallax -->
-      <div class="img_m">
-        <p id="parallax_p">«¿Qué necesitas para comenzar un negocio? Tres cosas simples: conocer tu producto mejor que
-          nadie,
-          conocer a
-          tus clientes y tener un deseo ardiente de tener éxito». <br> <strong> Dave Thomas, fundador de Wendy’s.
-          </strong></p>
-      </div>
-
-      <div class="articulos movimiento" id="articulos">
-        <h2 id="aritculosH2" class="caption">Artículos <img class="" alt="" src="./images/librerias.ico" />
+        <h2 id="ppt">
+          <!-- Rock, Papel and Scissors -->
+          Piedra, Papel y Tijeras
         </h2>
-        <article>
-          <h3 class="articulos__titulos">Tips Javascript <img class="lenguajes" alt="" src="./images/tips.ico" /></h3>
-          <ul id="lista">
-            <li><strong>
-                ¿Qué es el operador ternario de JavaScript?</strong>
-              El operador ternario es un atajo para la instrucción if.
-            </li>
-            <li>
-              <strong>
-                ¿Qué es un operador de propagación?
-              </strong>
-              El operador de extensión en JavaScript es una sintaxis útil para agregar elementos a una matriz, combinar
-              matrices en una más grande, expandir una matriz dentro de los argumentos de una función y más.
-            </li>
-            <li>
-              <strong>
-                ¿Cuál es la diferencia entre Target y currentTarget en el contexto del evento?
-              </strong>
-              objetivo se refiere al elemento que desencadena un evento. currentTarget al elemento que escucha el
-              detector
-              de eventos.
-            </li>
-          </ul>
-        </article>
-        <article>
-          <h3 class="articulos__titulos">React es una libreria o un Framework<img class="lenguajes" alt=""
-              src="./images/libreria.ico" /></h3>
-          <ul id="lista">
-            <li>
-              React es una biblioteca escrita en JavaScript, desarrollada en Facebook para facilitar la creación de
-              componentes
-              interactivos, reutilizables, para interfaces de usuario. Se utiliza en Facebook para la producción de
-              componentes, e
-              Instagram está escrito enteramente en React.
-            </li>
-          </ul>
-        </article>
-      </div>
-    </main>
-    <footer>
-      <div class="footer_img">
-        <div class="img_f">
-
-          <div class="footer__content">
 
 
-            <div id="nombre">
-              <h2>JAHZ</h2>
-              <P>Buenos Aires, Argentina</P>
-            </div>
+        <div class="marcacion">
 
-            <div id="contacto">
-              <h3>Contáctame</h3>
-              <P>y pongamos manos a la obra</P>
-            </div>
-
-            <div id="redes">
-              <p>Desing by ME</p>
-              <div id="redes_contact">
-
-                <a href="#"><img class="ico red" src="./images/instagram.ico" alt="" title="github"></a>
-
-                <a href="#"><img class="ico red" src="./images/linkedin.ico" alt="" title="github"></a>
-
-                <a href="mailto:parapruebas5162@gmail.com"><img class="ico red" src="./images/gmail.ico" alt=""
-                    title="github"></a>
-
-              </div>
-            </div>
-
+          <div class="tituloCuadro">
+            <h4 class="titulocasilla">Ganadas</h4>
+            <div class="win">0</div>
           </div>
-        </div>
-      </div>
-    </footer>
 
-  </div>
-  <!--   > -->
-  <!-- **********************************scroll**&#11014;*********************************************** -->
-  <button class="scroll-top-btn hidden"><img id="up" src="./images/up.ico" alt=""></button>
+          <div class="tituloCuadro">
+            <h4 class="titulocasilla">Perdidas</h4>
+            <div class="lost">0</div>
+          </div>
+
+          <div class="tituloCuadro">
+            <h4 class="titulocasilla">Empates</h4>
+            <div class="tie">0</div>
+          </div>
+
+        </div>
+        <div id="start-text">
+          Elige una opción para iniciar
+        </div>
+        <div id="result">
+
+          <div class="resulDiv__img">
+            <span class="vs">tu</span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img class="imgPpt" id="user-img" src="../images/rock.svg" alt="">
+          </div>
+          <span class="vs"> vs</span>
+          <div class="resulDiv__img">
+            <span class="vs"> comp</span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img class="imgPpt" id="machine-img" src="../images/rock.svg" alt="">
+          </div>
+
+        </div>
+
+        <div id="group-btn">
+
+          <button id="rock" type="button" class="btnMark">
+            <img class="btnImg" src="../images/piedra.ico" alt="" />
+          </button>
+
+          <button id="paper" type="button" class="btnMark">
+            <img class="btnImg" src="../images/papel.ico" alt="" />
+          </button>
+
+          <button id="scissors" type="button" class="btnMark">
+            <img class="btnImg" src="../images/tijera.ico" alt="" />
+          </button>
+
+        </div>
+
+      </div>
+
+      <div id="juegoB">el otro</div>
+    </div>
+
+    <div class="separador">
+      <!-- ID Particles.js -->
+      <div id="particles2-js"></div>
+      <p>«¿Qué necesitas para comenzar un negocio? Tres cosas simples: conocer tu producto mejor que nadie, conocer a
+        tus clientes y tener un deseo ardiente de tener éxito». – Dave Thomas, fundador de Wendy’s. </p>
+    </div>
+    <div class="articulos" id="articulos">
+      <h2 id="aritculosH2">Artículos <img class="lenguajes" alt="" src="./images/librerias.ico" /></h2>
+      <article>
+        <h3 class="articulos__titulos">Tips Javascript <img class="lenguajes" alt="" src="./images/tips.ico" /></h3>
+        <ul id="lista">
+          <li><strong>
+              ¿Qué es el operador ternario de JavaScript?</strong>
+            El operador ternario es un atajo para la instrucción if.
+          </li>
+          <li>
+            <strong>
+              ¿Qué es un operador de propagación?
+            </strong>
+            El operador de extensión en JavaScript es una sintaxis útil para agregar elementos a una matriz, combinar
+            matrices en una más grande, expandir una matriz dentro de los argumentos de una función y más.
+          </li>
+          <li>
+            <strong>
+              ¿Cuál es la diferencia entre Target y currentTarget en el contexto del evento?
+            </strong>
+            objetivo se refiere al elemento que desencadena un evento. currentTarget al elemento que escucha el
+            detector
+            de eventos.
+          </li>
+      </article>
+      <article>
+        <h3 class="articulos__titulos">React es una libreria o un Framework<img class="lenguajes" alt=""
+            src="./images/libreria.ico" /></h3>
+        <p class="articulo">
+          React es una biblioteca escrita en JavaScript, desarrollada en Facebook para facilitar la creación de
+          componentes
+          interactivos, reutilizables, para interfaces de usuario. Se utiliza en Facebook para la producción de
+          componentes, e
+          Instagram está escrito enteramente en React.
+        </p>
+        </ul>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-pag">
+      <div class="footer-donde">
+        <h2 id="footerNombre">JAHZ</h2>
+        <h3 id="fDonde">Buenos Aires, Argentina</h3>
+      </div>
+
+      <div class="footer-invitacion">
+        <h4>Contáctame</h4>
+        <p class="msg">y pongamos manos a la obra</p>
+      </div>
+
+
+
+
+    </div>
+    </div>
+    <div class="diseño">
+      <h5>Contacto:</h5>
+      <div class="redes">
+        <a href="#"><img class="ico red" src="./images/instagram.ico" alt="" title="github"></a>
+        <a href="#"><img class="ico red" src="./images/linkedin.ico" alt="" title="github"></a>
+        <a href="mailto:parapruebas5162@gmail.com"><img class="ico red" src="./images/gmail.ico" alt=""
+            title="github"></a>
+      </div>
+  </footer>
   <!-- **********************************botones************************************************* -->
   <button class="panel-btn hamburger hamburger--spring" type="button">
     <span class="hamburger-box">
@@ -318,15 +297,19 @@
       <a href="#articulos">Artículos</a>
     </nav>
   </aside>
+
+  <!-- **********************************scroll**&#11014;*********************************************** -->
+  <button class="scroll-top-btn hidden"><img id="up" src="./images/up.ico" alt=""></button>
+  <!-- **********************************DFarktheme************************************************* -->
+  <!-- <button class="change-theme-button" id="theme-button"></button> -->
   <!-- **********************************template************************************************* -->
   <template id="template-cards">
 
     <div class="card">
-      <img class="card_img" src="https://placeimg.com/200/200/people" alt="" />
+      <img src="https://placeimg.com/200/200/people" alt="" />
       <div class="card-body">
-        <h2 class="card_title">Carro </h2>
-        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eum a illo quisquam
-          soluta nam !</p>
+        <h2>Carro </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eum a illo quisquam soluta nam !</p>
       </div>
       <div class="footer">
         <a href=""><img class="ico" src="./images/netlify.ico" alt="" title="netlify"></a>
@@ -337,11 +320,17 @@
 
   </template>
 
-  <!-- JS  -->
-  <script src="./js/index_dom.js" type="module"></script>
+
+
+  <script src="js/index_dom.js" type="module"></script>
+  <script src="./js/main.js"></script>
+
   <!-- JS Particles.js -->
   <script src="./js/particles.min.js"></script>
   <script src="./js/app.js"></script>
+
+
+
 </body>
 
 </html>
